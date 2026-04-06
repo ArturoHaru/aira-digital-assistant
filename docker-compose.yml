@@ -1,0 +1,7 @@
+
+services:
+  aira-backend:
+    build: .
+
+include:
+  - path: ./aira-express/chromadb-compose.yml
