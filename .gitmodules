@@ -1,8 +1,12 @@
 [submodule "aira-express"]
 	path = aira-express
 	url = https://github.com/ArturoHaru/aira-express.git
-	branch = main
+	branch = master
 [submodule "aira-angular"]
 	path = aira-angular
 	url = https://github.com/ArturoHaru/aira-angular.git
-	branch = main
+	branch = master
+[submodule "aira-wakeword"]
+	path = aira-wakeword
+	url = https://github.com/ArturoHaru/aira-wakeword.git
+  branch = master
