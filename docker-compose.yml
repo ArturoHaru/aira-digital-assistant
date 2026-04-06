@@ -3,10 +3,10 @@ services:
   aira-backend:
     build: .
     ports:
-      - "8080":"8080"
+      -"8080":"8080"
   
   aira-wakeword:
     build: ./aira-wakeword/Dockerfile
-
+ 
 include:
   - path: ./aira-express/chromadb-compose.yml
