@@ -1,5 +1,5 @@
 # --- STAGE 1: Angular compilation ---
-FROM node:20 AS angular-builder
+FROM node:25 AS angular-builder
 WORKDIR /build-frontend
 COPY ./aira-angular/package*.json ./
 RUN npm install
