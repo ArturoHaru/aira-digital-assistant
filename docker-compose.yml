@@ -4,9 +4,11 @@ services:
     build: .
     ports:
       - "9000:9000"
-  
+     
   aira-wakeword:
     build: ./aira-wakeword/
- 
+    ports:
+      - "5000:5000"
+
 include:
   - path: ./aira-express/chromadb-compose.yml

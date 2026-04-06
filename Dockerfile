@@ -22,5 +22,5 @@ RUN npx tsc
 # COPIA IL COMPILATO DI ANGULAR
 COPY --from=angular-builder /build-frontend/dist ./dist/dist/aira-angular
 
-EXPOSE 8080
+EXPOSE 9000
 CMD ["npm", "run", "startProduction"]
