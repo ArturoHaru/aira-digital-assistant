@@ -17,8 +17,7 @@ RUN npm install --only=production
 COPY ./aira-express .
 
 # COPIA IL COMPILATO DI ANGULAR
-# Sostituisci "nome-del-tuo-progetto" con il valore presente in angular.json
-COPY --from=angular-builder /build-frontend/dist/aira-angular ./dist
+COPY --from=angular-builder /build-frontend/dist ./aira-angular
 
 EXPOSE 8080
 CMD ["npm", "start"]
