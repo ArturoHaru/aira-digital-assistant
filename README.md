@@ -1,15 +1,5 @@
 
-# {project_name}
-
-<div align="center">
-  <img src="logo.png" alt="{project_name} Logo" width="200" height="200">
-  
-  <p># Aira Digital Assistant
-
-    <strong>{project_description}</strong>
-  </p>
-  
-</div>
+# aira-digital-assistant
 
 ## 🌟 Overview
 Aira is a digital assistant interface that uses local llm to talk to your Home Assistant installation. It uses the Speaches service to transcribe and synthesize.
@@ -35,8 +25,8 @@ Aira is a digital assistant interface that uses local llm to talk to your Home A
 
 1. **Clone the repository**
    ```bash
-   git clone --recurvise https://github.com/{username}/{project_name}.git
-   cd {project_name}
+   git clone --recurvise https://github.com/ArturoHaru/aira-digital-assistant.git
+   cd aira-digital-assistant
    ```
 
 2. **Fill out all the dummy.env file fields in the aira-express and rename it to .env**
@@ -58,7 +48,7 @@ Aira is a digital assistant interface that uses local llm to talk to your Home A
 If you are going to use the frontend on a different machine than the backend, change serverUrl line in the environment.ts file. Otherwise, you can skip this step.
 "localhost"  -> your server url (you need to use https or the browser will block  microphone input). 
 ```typescript
-# in aira-angular/src/environment.ts
+//in aira-angular/src/environment.ts
 export const environment = {
   production: true,
   serverUrl: 'http://localhost/api', // change this line 
@@ -74,7 +64,6 @@ TODO work in progress... There are more steps, I will push all the changes soon
 
 - 🐛 Report bugs
 - 💡 Suggest new features
-- 📝 Improve documentation
 - 🔧 Submit pull requests
 
 ## 📊 Roadmap
@@ -84,7 +73,7 @@ TODO work in progress... There are more steps, I will push all the changes soon
 - [ ] Auto Device discovery
 - [x] ~~Adaptability~~
 
-See the [open issues](https://github.com/{username}/{project_name}/issues) for a full list of proposed features and known issues.
+See the [open issues](https://github.com/ArturoHaru/aira-digital-assistant/issues) for a full list of proposed features and known issues.
 
 
 ## 📄 License
