@@ -6,7 +6,7 @@ services:
       - "8080:8080"
   
   aira-wakeword:
-    build: ./aira-wakeword/Dockerfile
+    build: ./aira-wakeword/
  
 include:
   - path: ./aira-express/chromadb-compose.yml
