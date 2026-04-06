@@ -20,7 +20,7 @@ RUN npm install typescript
 RUN npx tsc
 
 # COPIA IL COMPILATO DI ANGULAR
-COPY --from=angular-builder /build-frontend/dist ./dist/aira-angular
+COPY --from=angular-builder /build-frontend/dist ./dist/dist/aira-angular
 
 EXPOSE 8080
 CMD ["npm", "run", "startProduction"]
