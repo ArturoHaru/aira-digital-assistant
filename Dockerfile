@@ -16,8 +16,11 @@ COPY ./aira-express/package*.json ./
 RUN npm install --only=production
 COPY ./aira-express .
 
+RUN npm install typescript
+RUN npx tsc
+
 # COPIA IL COMPILATO DI ANGULAR
-COPY --from=angular-builder /build-frontend/dist ./aira-angular
+COPY --from=angular-builder /build-frontend/dist ./dist/aira-angular
 
 EXPOSE 8080
-CMD ["npm", "start"]
+CMD ["npm", "run", "startProduction"]

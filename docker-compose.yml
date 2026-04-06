@@ -3,7 +3,7 @@ services:
   aira-backend:
     build: .
     ports:
-      - "8080:8080"
+      - "9000:9000"
   
   aira-wakeword:
     build: ./aira-wakeword/
