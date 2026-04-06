@@ -2,6 +2,9 @@
 services:
   aira-backend:
     build: .
+  
+  aira-wakeword:
+    build: ./aira-wakeword/Dockerfile
 
 include:
   - path: ./aira-express/chromadb-compose.yml

@@ -15,6 +15,7 @@ Aira is a digital assistant interface that uses local llm to talk to your Home A
 ### Prerequisites
 
 - Docker
+- LM Studio
 - Home Assistant - [get it here](https://www.home-assistant.io/installation)
 - Speaches - [get it here](https://speaches.ai/)
 - A NVIDIA GPU with 4Gb of VRAM or more
@@ -58,7 +59,15 @@ export const environment = {
   openwakewordEndpoint: '/check_wakeword',
 };
 ```
-TODO work in progress... There are more steps, I will push all the changes soon
+
+4. Run the docker compose
+```
+```
+```bash
+cd ../ #in the root directory of the project
+docker compose up --build
+```
+
 
 ### Ways to Contribute
 
