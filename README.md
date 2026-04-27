@@ -2,7 +2,7 @@
 # aira-digital-assistant
 
 ## 🌟 Overview
-Aira is a digital assistant interface that uses local llm to talk to your Home Assistant installation. It uses the Speaches service to transcribe and synthesize.
+Aira is a digital assistant interface that uses local LLM to talk to your Home Assistant installation. It uses the Speaches service to transcribe and synthesize.
 
 ## ✨ Features
 
